@@ -3,7 +3,7 @@
 
 pkgname=cairo
 pkgver=1.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Cairo vector graphics library"
 arch=(i686 x86_64)
 license=('LGPL' 'MPL')
@@ -27,7 +27,7 @@ build() {
 	--localstatedir=/var \
 	--disable-static \
 	--enable-tee \
-	--enable-xlib-xcb \
+	--disable-xlib-xcb \
 	# --enable-test-surfaces \ takes ages
 	#--enable-drm # breaks build
   make
