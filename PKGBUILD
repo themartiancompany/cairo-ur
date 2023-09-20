@@ -43,10 +43,6 @@ pkgver() {
 
 prepare() {
   cd cairo
-
-  # https://bugs.archlinux.org/task/77432
-  # https://gitlab.freedesktop.org/cairo/cairo/-/issues/639
-  git revert -n 47a21c6e30eef91db503a5a183d5c8cf558aaa56
 }
 
 build() {
